@@ -1,3 +1,13 @@
+$(document).ready(function() {
+	//FizzBuzz Refactor
+	
+	//Once Page is Loaded, Prompt for Integer Input
+	var input = prompt("Enter an INTEGER to FizzBuzz","e.g. 15");
+	input = parseInt(+input);
+	
+	// Call fizzBuzz function
+	fizzBuzz(input);
+	
 	function fizzBuzz(number) {
 		for ( var i = 1; i <= number; i++ ) {
 			console.log(i);
@@ -20,18 +30,9 @@
 				console.log(i);
 				$("body").append(i);
 				$("body").append("<br/>");
-			}
+			};
 		}
 	}
 
-$(document).ready(function() {
-	//FizzBuzz Refactor
-	
-	//Once Page is Loaded, Prompt for Integer Input
-	var input = prompt("Enter an INTEGER to FizzBuzz","e.g. 15");
-	input = parseInt(+input);
-	
-	// Call fizzBuzz function
-	fizzBuzz(input);
 
 });
